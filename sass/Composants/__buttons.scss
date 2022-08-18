@@ -1,0 +1,171 @@
+button {
+  background: linear-gradient(180deg, $secondary , #9356DC);
+  padding: 15px 20px;
+  margin-top: 50px;
+  border-bottom: 19px;
+  border-left: 16px;
+  border-right: 18px;
+  border-radius: $borderRaduis;
+
+  text-decoration: none;
+  margin: 20px 0 20px 0;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border-top-width:0px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #6561645c;
+  transition: 500ms;
+  font-size: initial;
+    font-weight: bolder;
+
+  &:hover {
+    background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255) 100%);
+    box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
+  }
+}
+
+main .orderCard {
+  
+  width: 270px;
+    padding: 20px ;
+    
+  height: 20px;
+  
+
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #00000033;
+  cursor: pointer;
+  display: flex;
+  font-size: 19px;
+  margin-top: 19px;
+  transition: all .2s ease-in-out;
+}
+
+.restaurantItem {
+  width: 100%;
+  min-width: 36.8px;
+  border-radius: 32px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  cursor: pointer;
+  position: relative;
+  transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.transition_Icon {
+  cursor: pointer;
+  grid-area: 1/2;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  transition: margin-right 2s .5s;
+}
+
+.goToRestaurant{
+cursor: pointer;
+}
+
+
+.fa-heart {
+  //color: ;
+  
+  /*background-color: #000;
+  border-radius: 50%;
+  padding:1px;*/
+}
+.fa-heart::before {
+  content: "\f004";
+  
+  //font-weight: bold;
+  // transition: color 1s ease-out;
+}/*
+.fa-heart:hover{
+  color: $secondary;
+  cursor: pointer;
+}*/
+
+  
+  .fa-heart .fas{ 
+    cursor: pointer;
+  &::before :valid {
+    background-color: $primary;
+    color:$primary;
+}
+}
+
+.commander {
+  background: linear-gradient(180deg, $secondary , #9356DC);
+  padding: 15px 20px;
+  margin-top: 50px;
+  border-bottom: 19px;
+  border-left: 16px;
+  border-right: 18px;
+  border-radius: $borderRaduis;
+
+  margin: 20px 600px 20px 600px;
+  text-decoration: none;
+  
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border-top-width:0px;
+  @media (max-width: 768px) {
+  margin: 20px 70px 20px 70px;
+}
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #6561645c;
+  transition: 500ms;
+  font-size: initial;
+    font-weight: bolder;
+
+  &:hover {
+    background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255) 100%);
+    box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
+  }
+}
+
+.dishes__card__check {
+  @media (max-width: 768px){
+  height: 50px;
+}
+  width: 60px;
+  padding-top: 0px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  // opacity: 0;
+  background-color: #99E2D0;
+//   margin-left: 25px;
+//   margin-right: -70px;
+  border-radius: 0 10px 10px 0;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   -webkit-transition: all 0.7s ease-in-out;
+//   -o-transition: all 0.7s ease-in-out;
+  // transition: all 0.7s ease-in-out;
+  .check_icons
+  {color: white;
+  &::before{
+    transition: all 0.7s ease-in-out;
+  }
+
+}
+ }
+
+//   .check_icons {
+//     color: white;
+//     font-size: 20px;
+//     opacity: 0;
+//     -webkit-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//     -webkit-transition: all 0.7s ease-in-out;
+//     -o-transition: all 0.7s ease-in-out;
+//     transition: all 0.7s ease-in-out;}

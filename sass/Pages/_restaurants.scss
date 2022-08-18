@@ -1,0 +1,136 @@
+
+.titreAndHeart{
+  display: flex;
+  align-items: center;
+  h1{
+      margin-right: 120px;
+      font-family: $fontFamilly;
+  }
+}
+.titreAndHeart_Diff{
+  display: flex;
+  align-items: center;
+  h1{
+      margin-right: 50px;
+      font-family: $fontFamilly;
+  }
+}
+
+
+
+.picture_Restaurant img{
+  width: 1582px;
+
+    height: 234px;
+    object-fit: contain;
+  }
+
+  .picture_Restaurant_Diff img {
+    
+        width: 350px;
+        height: 296px;
+        object-fit: cover;
+    
+  }
+
+  
+  
+  .titreAndHeart{
+    display: flex;
+    align-items: center;
+    h1{
+        margin-right: 120px;
+        font-family: $fontFamilly;
+    }
+  }
+  .titreAndHeart_Diff{
+    display: flex;
+    align-items: center;
+    h1{
+        margin-right: 50px;
+        font-family: $fontFamilly;
+    }
+  }
+
+  .plat{
+    width: 410px;
+    height: 80px;
+
+    display: flex;
+    
+    background-color: white;
+    margin-bottom: 20px;
+    @media (max-width: 768px){
+      font-size: 12px;
+    width: 310px;
+    height: 50px;}
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+     // padding: 7px 0 0 10px;
+    p{
+        font-family: $fontTexte;
+        font-weight: 399;  
+        margin: 0px;
+    }
+    .tarrif{
+        
+    margin-top: 20px;
+    p{
+        font-family: $fontTexte;
+        font-weight: bold;  
+        
+    
+
+    }
+}
+    h4{
+        font-family: $fontTexte;
+        font-weight: revert;  
+        margin: 0px;
+    }
+    .englobePlat{
+      white-space: nowrap;
+        width: 85%;
+        padding: 7px 0 0 10px;
+    }
+  }
+  .CarteRestaurant{
+    background-color: rgb(235 235 235);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    padding-left: 20px;
+    position: relative ;
+    top: -50px;
+  }
+  .picture_Restaurant img{
+    object-fit: cover;
+  
+  width: 1582px;
+    height: 300px;
+    @media (max-width: 768px){
+    object-fit: initial;
+    width: 360px;
+  } }
+
+  .titreAndHeart_Diff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all_Plat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 768px){
+    flex-direction: column;
+    align-items: center;
+  }}
+  .all_Plat_Wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
