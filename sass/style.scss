@@ -4,11 +4,12 @@
 
 @import "./Utils/_mixins";
 
-@import "./Composants/_buttons", "./Composants/_maps";
+@import "./Composants/_buttons", "./Composants/_maps", "./Composants/_animation","./Composants/_loader","./Composants/_coeur";
 
 @import "./Pages/_index";
 
 @import "./Pages/_restaurants";
+
 
 
 
@@ -34,6 +35,16 @@ header {
     justify-content: center;
   }
 }
+.pour_Header{
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+  @media (max-width: 768px){
+  flex-direction: row;
+    align-items: center;
+  margin: 20px ;
+}
+ }
 
 @media (min-width: 650px) {
   .heroItem {
@@ -57,7 +68,9 @@ a{
   height: 300px;
   margin: 10px;
 }
-
+.prheader__back{
+font-size: x-large;
+}
 .numéro {
   position: absolute;
   width: 100%;
@@ -91,9 +104,8 @@ a{
 
 .Blocrestaurant {
 
-  height: 20%;
-  // display: flex;
-  // flex-direction: column;
+  
+  height: 240px;
   width: 30%;
   background-color: white;
   margin-top: 66.445px;
@@ -116,8 +128,8 @@ a{
     font-family: $fontTexte;
     font-weight: 500;
     font-size: small;
-  
-    
+    @media (max-width: 991px){
+      margin-left: 600px;  }
     @media (max-width: 768px){
    
     margin-left: 17%;
@@ -140,12 +152,17 @@ a{
     font-family: $fontTexte;
     font-weight: 500;
     font-size: small;
-
+    @media (max-width: 991px){
+      margin-left: 600px;  }
 
   
   }
 }
-@media (max-width: 991px){
+@media (max-width: 768px){
+  .list_fonctionnement {
+    
+    display: flex;
+    flex-direction: column;}
 .btnHeart {
   margin-right: 5px;
 }
@@ -156,9 +173,9 @@ a{
   flex-direction: column;
   padding-bottom: 60px;
   justify-content: center;
-  @media (max-width: 991px){
-  align-items: center;
-}
+
+  
+ 
   h2 {
     margin: 30px 0 0 20px
   }
@@ -174,13 +191,15 @@ a{
     height: 160px;
     width: 100%;
     border-radius: 15px 15px 0 0;
+    @media (max-width: 991px){
+    object-fit: cover; }
   }
 }
 
 .global {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  
 }
 
 .englobage {
@@ -207,7 +226,7 @@ a{
 
 .image_Recadre {
   height: 341px;
- object-fit: fill;
+  object-fit: cover;
 
 }
 .image_Recadre_Deux
@@ -227,6 +246,8 @@ a{
     color: #ffffff;
     margin-left: 23px;
     margin-bottom: 30px;
+    font-family: $fontFamilly;
+    font-weight: 200;
   }
 
   ul {
@@ -257,25 +278,9 @@ a{
   }
 }
 
-// heart
-// .fa-stack :nth-child(2) {
-//   color: transparent;
-//   transition: all 350ms;
-//   padding: 0px;
-// }
-
-// .fa-stack-1x,
-// .fa-stack-2x {
-//   left: 0;
-//   position: absolute;
-//   text-align: center;
-//   width: 100%;
-// }
 
 
-.fa-solid {
-  margin-right: 60px;
-}
+
 
 .englobage {
   margin-right: 25px;
@@ -284,6 +289,8 @@ a{
 footer {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto';
+  font-weight: 300;
 }
 
 #position_search {
@@ -309,26 +316,17 @@ footer {
 }
 
 header {
-  justify-content: center;
-  margin: 20px 40px 20px 40px;
+  margin: 20px 0 20px 0;
   display: flex;
-  
-    flex-direction: row;
-    @media (max-width: 768px){
-    justify-content: space-around;
+  // align-items: flex-end; 
 
-}}
+}
+
 body{
   margin: 0px;
 }
 
-.menu{
-  display: flex;
-    justify-content: center;
-    @media (max-width: 768px){
-    justify-content: unset;
-  }
-}
+
 .aline {
   display: flex;
   align-items: center;
@@ -412,20 +410,17 @@ body{
     font-family: $fontTexte;
     font-weight: 700;
     font-size: medium;
+    
   }
 
-  .regroupement_Cartes {
-    flex-direction: column;
-    align-items: center;
-
-  }
+  
 
   header {
     img {
       width: 60%;
       display: flex;
       justify-content: center;
-      margin-right: 80px;
+      
     }
   }
 
@@ -452,9 +447,16 @@ body{
 
 .menu
 {
+  display: flex;
+    justify-content: center;
+    @media (max-width: 768px){
+    justify-content: unset;
+    padding-left: 25px;}
   p{
     border-bottom: solid $tertiaire;
     width: 35px;
   }
+
+  
 }
 

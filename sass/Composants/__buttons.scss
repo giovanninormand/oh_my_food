@@ -24,24 +24,7 @@ button {
   }
 }
 
-main .orderCard {
-  
-  width: 270px;
-    padding: 20px ;
-    
-  height: 20px;
-  
 
-  align-items: center;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px #00000033;
-  cursor: pointer;
-  display: flex;
-  font-size: 19px;
-  margin-top: 19px;
-  transition: all .2s ease-in-out;
-}
 
 .restaurantItem {
   width: 100%;
@@ -67,23 +50,6 @@ cursor: pointer;
 }
 
 
-.fa-heart {
-  //color: ;
-  
-  /*background-color: #000;
-  border-radius: 50%;
-  padding:1px;*/
-}
-.fa-heart::before {
-  content: "\f004";
-  
-  //font-weight: bold;
-  // transition: color 1s ease-out;
-}/*
-.fa-heart:hover{
-  color: $secondary;
-  cursor: pointer;
-}*/
 
   
   .fa-heart .fas{ 
@@ -93,6 +59,34 @@ cursor: pointer;
     color:$primary;
 }
 }
+// test COEUR
+.fa-heart{
+  // display: inline-block;
+  // position: absolute;
+  // left: 77%;
+  // font-size: xx-large;
+  // bottom: 30px;
+
+    &:hover::after{
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f004";
+  position:absolute;
+  left: 0px;
+  top: 0px; 
+  font-size: xx-large;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-animation: fill 1s ease forwards;
+          animation: fill 1s ease forwards;     
+  }
+}
+
+
 
 .commander {
   background: linear-gradient(180deg, $secondary , #9356DC);
@@ -109,6 +103,9 @@ cursor: pointer;
   font-weight: 700;
   color: rgb(255, 255, 255);
   border-top-width:0px;
+  @media (max-width: 991px) {
+  margin: 20px 200px 20px 200px;
+}
   @media (max-width: 768px) {
   margin: 20px 70px 20px 70px;
 }
@@ -133,23 +130,11 @@ cursor: pointer;
   display: flex;
     justify-content: center;
     align-items: center;
-  // opacity: 0;
+ 
   background-color: #99E2D0;
-//   margin-left: 25px;
-//   margin-right: -70px;
+
   border-radius: 0 10px 10px 0;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   -webkit-box-pack: center;
-//   -ms-flex-pack: center;
-//   justify-content: center;
-//   -webkit-transition: all 0.7s ease-in-out;
-//   -o-transition: all 0.7s ease-in-out;
-  // transition: all 0.7s ease-in-out;
+
   .check_icons
   {color: white;
   &::before{
@@ -159,13 +144,112 @@ cursor: pointer;
 }
  }
 
-//   .check_icons {
-//     color: white;
-//     font-size: 20px;
-//     opacity: 0;
-//     -webkit-transform: rotate(0deg);
-//     -ms-transform: rotate(0deg);
-//     transform: rotate(0deg);
-//     -webkit-transition: all 0.7s ease-in-out;
-//     -o-transition: all 0.7s ease-in-out;
-//     transition: all 0.7s ease-in-out;}
+
+
+
+// test
+
+
+.btn_choix { 
+  width: 270px; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  box-shadow: 0px 4px 4px 0px #ddd8d8;
+  list-style: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  margin-top:20px  ;
+ }
+  .btn_choix:hover {
+  background-color: lighten($primary,55%);
+  box-shadow: 0px 7px 7px 0px #ddd8d8;
+  background-blend-mode : lighten ;
+  cursor: pointer;
+  }
+  .btn_choix:hover span{
+  color: $primary;
+}
+
+
+  .btn_numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #fff;
+    background-color: $primary;
+    border: none;
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: -15px;
+  }
+
+  .icon {
+    font-size: 1em;
+    color: #6b6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.btn_text{
+   font-weight: 600;
+   padding: 25px;
+  }
+
+  // ancien
+
+  .all_Plat_Wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } 
+  .plat{
+    width: 410px;
+    height: 80px;
+
+    display: flex;
+
+    background-color: white;
+    margin-bottom: 20px;
+    @media (max-width: 768px){
+      font-size: 12px;
+    width: 310px;
+    height: 50px;}
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+     // padding: 7px 0 0 10px;
+    p{
+        font-family: $fontTexte;
+        font-weight: 399;  
+        margin: 0px;
+    }
+    .tarrif{
+
+    margin-top: 20px;
+    p{
+        font-family: $fontTexte;
+        font-weight: bold;  
+
+
+
+    }
+}
+    h4{
+        font-family: $fontTexte;
+        font-weight: revert;  
+        margin: 0px;
+    }
+    .englobePlat{
+      white-space: nowrap;
+        width: 85%;
+        padding: 7px 0 0 10px;
+    }
+  }

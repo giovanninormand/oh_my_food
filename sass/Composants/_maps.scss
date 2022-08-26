@@ -2,17 +2,18 @@
     display : flex ;
     justify-content : center ;
     align-items : center ;
-    background-color: $backgroundColor;
-    box-shadow: inset 0px 5px 5px 0px rgb(175 168 168);
+    background-color: #eceae8;
+    box-shadow: inset 0px 5px 5px 0px #eceae8;
     height: 50px;
 }
 
 .maps__search input{
    border: none;
-  background: $backgroundColor;
+  background: #eceae8;
   font-size: 1rem;
   padding: 10px 5px 10px 5px;
   margin-top: 5px;
   text-align: center;
   width: 150px;
+  font-weight:600;
    }
