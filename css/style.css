@@ -403,6 +403,35 @@ button:hover {
   animation-delay: 1s;
 }
 
+/* Animation  survol coeur */
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /* LOADER */
 .bloc {
   background-color: white;
@@ -432,10 +461,14 @@ button:hover {
 }
 
 .fa-heart {
-  position: absolute;
-  left: 77%;
   font-size: 25px;
   font-weight: lighter;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .fa-heart {
+    left: 77%;
+  }
 }
 .fa-heart:hover::after {
   cursor: pointer;
@@ -456,6 +489,25 @@ button:hover {
   animation: fill 1s ease forwards;
 }
 
+@media (min-width: 650px) {
+  #heart_Un {
+    margin-left: 30%;
+  }
+  #heart_Trois {
+    margin-left: 30%;
+  }
+  #heart_Deux {
+    margin-left: 30%;
+  }
+  #heart_Quatre {
+    margin-left: 30%;
+  }
+}
+@media (min-width: 650px) {
+  #titreHeart {
+    left: 58%;
+  }
+}
 .homeSection {
   padding-bottom: 60px;
 }
@@ -486,12 +538,16 @@ button:hover {
 
 .regroupement_Cartes {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-right: 15px;
 }
 .regroupement_Cartes P {
   font-size: larger;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .regroupement_Cartes {
     margin: 20px;
     flex-direction: column;
@@ -585,6 +641,15 @@ button:hover {
   }
 }
 
+.far {
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
 .resto__element {
   border-radius: 10px;
   background-color: white;
@@ -666,7 +731,7 @@ button:hover {
   width: 0px;
   height: 70px;
 }
-anim-1 .restoMenu:hover .resto__contents__right {
+.anim-1 .restoMenu:hover .resto__contents__right {
   cursor: pointer;
   width: 60px;
   height: 70px;
@@ -776,13 +841,13 @@ a {
 
 .Blocrestaurant {
   height: 240px;
-  width: 30%;
+  width: 40%;
   background-color: white;
   margin-top: 66.445px;
   margin-left: 15px;
   border-radius: 15px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .Blocrestaurant {
     width: auto;
   }
@@ -792,7 +857,7 @@ a {
   left: 0px;
   width: 50px;
   margin-top: 6px;
-  margin-left: 300px;
+  margin-left: 18%;
   position: absolute;
   background-color: #99E2D0;
   padding: 7px 8px;
@@ -863,11 +928,7 @@ a {
   height: 160px;
   width: 100%;
   border-radius: 15px 15px 0 0;
-}
-@media (max-width: 991px) {
-  .liste_restaurants img {
-    object-fit: cover;
-  }
+  object-fit: cover;
 }
 
 .global {

@@ -65,6 +65,42 @@
     }
 
 
-    /* Animation  survol menu */
+    
     
   }
+
+/* Animation  survol coeur */
+
+  @keyframes fill {
+    0%  {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    75%{
+      width: 75%;
+    }
+     100% {
+      width: 100%;
+    }
+  }
+  
+  @-webkit-keyframes fill {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    75%{
+      width: 75%;
+    }
+     100% {
+      width: 100%;
+    }
+  }
+
+  
+  
+  

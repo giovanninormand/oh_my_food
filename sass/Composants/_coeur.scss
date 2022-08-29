@@ -1,15 +1,18 @@
 .fa-heart{
     
-    position: absolute;
-    left: 77%;
+  @media (max-width: 768px){
+    left: 77%; }
+
     font-size: 25px;
     font-weight: lighter;
-  
+    
+    position: absolute;
       &:hover::after{
     cursor: pointer;
     font-family: FontAwesome;
     content: "\f004";
-    position:absolute;
+   
+      position: absolute;
     left: 0px;
     top: 0px; 
     font-size: 25px;
@@ -17,10 +20,38 @@
     background-color: #9356DC;
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     background: linear-gradient(#9356DC, #FF79DA);
+    
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-animation: fill 1s ease forwards;
             animation: fill 1s ease forwards;     
+            
     }
   }
+
+  @media (min-width: 650px) {
+  #heart_Un  
+  {
+    margin-left: 30%;
+}
+
+
+#heart_Trois
+{
+  margin-left: 30%;
+}
+  
+  #heart_Deux 
+  {
+    margin-left: 30%;
+}
+  
+  #heart_Quatre
+  {
+    margin-left: 30%;
+}
+}
+@media (min-width: 650px) {
+#titreHeart{left: 58%;}
+}
