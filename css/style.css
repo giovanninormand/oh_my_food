@@ -116,7 +116,7 @@ button {
   font-weight: bolder;
 }
 button:hover {
-  background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255) 100%);
+  background: linear-gradient(180deg, #FF79DA 0%, #FF79DA 100%);
   box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
 }
 
@@ -505,7 +505,7 @@ button:hover {
 }
 @media (min-width: 650px) {
   #titreHeart {
-    left: 58%;
+    left: 70%;
   }
 }
 .homeSection {
@@ -698,7 +698,6 @@ button:hover {
 
 .resto__icon {
   color: #99E2D0;
-  transform: 0.5s ease-in-out;
   background-color: white;
   border-radius: 100px;
 }
@@ -731,7 +730,7 @@ button:hover {
   width: 0px;
   height: 70px;
 }
-.anim-1 .restoMenu:hover .resto__contents__right {
+.restoMenu:hover .restoMenu__right {
   cursor: pointer;
   width: 60px;
   height: 70px;
@@ -798,7 +797,7 @@ a {
 }
 
 .alignementIcon {
-  position: rel ative;
+  position: relative;
   width: 300px;
   height: 300px;
   margin: 10px;
@@ -857,7 +856,7 @@ a {
   left: 0px;
   width: 50px;
   margin-top: 6px;
-  margin-left: 18%;
+  margin-left: 38%;
   position: absolute;
   background-color: #99E2D0;
   padding: 7px 8px;
@@ -866,11 +865,6 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: small;
-}
-@media (max-width: 991px) {
-  .Blocrestaurant .nouveauté {
-    margin-left: 600px;
-  }
 }
 @media (max-width: 768px) {
   .Blocrestaurant .nouveauté {
@@ -884,7 +878,7 @@ a {
   left: 0px;
   width: 50px;
   margin-top: 6px;
-  margin-left: 700px;
+  margin-left: 80%;
   position: absolute;
   background-color: #99E2D0;
   padding: 7px 8px;
@@ -893,11 +887,6 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: small;
-}
-@media (max-width: 991px) {
-  .Blocrestaurant .nouveauté_Deux {
-    margin-left: 600px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1014,26 +1003,6 @@ footer {
   flex-direction: column;
   font-family: "Roboto";
   font-weight: 300;
-}
-
-#position_search {
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: rgb(241, 234, 234);
-}
-#position_search #searchbox {
-  background-color: rgb(241, 234, 234);
-  align: center;
-}
-#position_search #champLocalisation {
-  border: none;
-  font-weight: bold;
-  outline: none;
-  color: black;
-  background-color: rgb(241, 234, 234);
 }
 
 header {

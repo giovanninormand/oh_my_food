@@ -123,7 +123,7 @@
 
   .resto__icon{
     color: $tertiaire;
-    transform: 0.5s ease-in-out;
+    
     background-color:white;
     border-radius: 100px;
   }
@@ -148,6 +148,8 @@
       position: relative;
       box-sizing: border-box;
     }
+
+  
     
     &__right{
       background-color:$tertiaire;
@@ -158,14 +160,17 @@
       width: 0px;
       height: 70px;
     }
-    .anim-1
-    &:hover .resto__contents__right {
+
+
+   
+    
+    &:hover .restoMenu__right {
       cursor: pointer;
       width: 60px;
       height: 70px;
       border-radius: 0px 10px 10px 0px;
-      
     }
+
     &__inline {
       display: flex;
       padding-top: 0px;
